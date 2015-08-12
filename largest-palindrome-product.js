@@ -1,8 +1,13 @@
+/**
+ * Largest palindrome product
+ * https://projecteuler.net/problem=4
+ */
+
 var printLargestPalindrom = function (n) {
   var result = 0;
 
   for (var i = n; i--;) {
-    for (var j = i; j--;) { // var j = i;
+    for (var j = i; j--;) { // var j = i; !!!
       var res = i * j + '';
       
       if(+res < result) continue;
