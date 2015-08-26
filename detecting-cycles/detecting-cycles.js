@@ -6,6 +6,11 @@
  * 1. Get last element - this element will be 100% the element from the cycle
  * 2. Get the first entry index of the element that is same as the last element
  * 3. Push elements following that element to the `result` array until there are no repeations
+ *
+ *
+ * Dmitry Ivanov solution:
+ * "1 2 3 1 2 3 1 2 3".match(/([0-9\s]+(\s|$))(\1)/)[1].trim();
+ * 
  */
 
 var fs = require('fs');
